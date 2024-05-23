@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-light py-5">
+        <div class="header">
+            <p>Los datos suministrados en este formulario tienen CARÁCTER DE DECLARACIÓN JURADA y serán tratados en forma reservada</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container my-5">
+            <h1>Formulario de Contacto</h1>
+            <form>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido" required>
+                <div class="form-group">
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Ingrese sus nombres" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-documento">Tipo de Documento:</label>
+                    <select class="form-control" id="tipo-documento" required>
+                        <option value="dni">DNI</option>
+                        <option value="pasaporte">Pasaporte</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numero-documento">Número de Documento:</label>
+                    <input type="number" class="form-control" id="numero-documento" placeholder="Ingrese su número de documento" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fecha-de-nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select class="form-control" id="sexo" required>
+                        <option selected>No deseo informar este dato</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="Sin Sexo">Sin sexo</option>
+                        <option value="nulo">Prefiero no responder</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado-civil">Estado Civil:</label>
+                    <select class="form-control" id="estado-civil" required>
+                        <option selected>...</option>
+                        <option value="soltero">Soltero/a</option>
+                        <option value="casado">Casado/a</option>
+                        <option value="divorciado">Divorciado/a</option>
+                        <option value="viudo">Viudo/a</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cuit">N° CUIT:</label>
+                    <input type="number" class="form-control" id="cuit" placeholder="Ingrese su número de CUIT" required>
+                </div>
+                <div class="form-group">
+                    <label for="domicilio">Domicilio Real:</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacion">Ocupacion:</label>
+                    <select class="form-control" id="ocupacion" required>
+                        <option selected>Seleccione...</option>
+                        <option value="AmaDeCasa">Ama de Casa</option>
+                        <option value="EmpleadoDeOficina">Empleado de Oficina</option>
+                        <option value="Ingeniero">Ingeniero</option>
+                        <option value="Medico">Médico</option>
+                        <option value="Maestro">Maestro</option>
+                        <option value="Artista">Artista</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Desempleado">Desempleado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="OtraOcupacion">Otra Ocupacion:</label>
+                    <input type="text" class="form-control" id="OtraOcupacion" placeholder="Ingrese su Ocupacion">
+                </div>
+                <div class="form-group">
+                    <label for="NivelDeEmpleo">Nivel De Empleo:</label>
+                    <select class="form-control" id="NivelDeEmpleo" required>
+                        <option selected>Seleccione...</option>
+                        <option value="TiempoCompleto">Tiempo Completo</option>
+                        <option value="TiempoParcial">Tiempo Parcial</option>
+                        <option value="Autonomo">Autónomo</option>
+                        <option value="ContratoTemporal">Contrato Temporal</option>
+                        <option value="Jubilado">Jubilado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="MatriculaProfesional">Matricula Profesional:</label>
+                    <input type="number" class="form-control" id="MatriculaProfesional" placeholder="Ingrese su Matricula Profesional">
+                </div>
+                <div class="form-group">
+                    <label for="DomicilioLaboral">Domicilio Laboral:</label>
+                    <input type="text" class="form-control" id="DomicilioLaboral" placeholder="Ingrese su Domicilio Laboral">
+                </div>
+                <div class="form-group">
+                    <label for="titulo1">Título 1:</label>
+                    <input type="text" class="form-control" id="titulo1" placeholder="Ingrese otro título1">
+                </div>
+                <div class="form-group">
+                    <label for="titulo2">Título 2:</label>
+                    <input type="text" class="form-control" id="titulo2" placeholder="Ingrese otro título2">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Acepta los términos y Condiciones
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <p>&copy; 2024 Mi Formulario Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
